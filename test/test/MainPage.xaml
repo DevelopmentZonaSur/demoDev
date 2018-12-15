@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:test"
+             x:Class="test.MainPage">
+
+    <AbsoluteLayout >
+        <AbsoluteLayout >
+            <Button                
+                Image="imagen.png"
+                AbsoluteLayout.LayoutBounds="0, 0, 0.5, 0.5"
+                AbsoluteLayout.LayoutFlags="All"
+                WidthRequest = "160"
+                HeightRequest= "160"
+                >
+                
+            </Button>
+            
+            <Button                
+                Image="imagen2.png"
+                AbsoluteLayout.LayoutBounds="1, 0 , 0.5, 0.5"
+                AbsoluteLayout.LayoutFlags="All"
+                WidthRequest = "160"
+                HeightRequest= "160"
+                >
+            </Button>           
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+
+</ContentPage>
