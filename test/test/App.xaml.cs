@@ -13,6 +13,7 @@ namespace test
         {
             InitializeComponent();
             
+            
         MainPage = new MainPage();
         }
 

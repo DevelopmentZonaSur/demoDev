@@ -3,46 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:test"
              x:Class="test.MainPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0">            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="3.5*"></RowDefinition>
+                <RowDefinition Height="3.5*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
 
-    <AbsoluteLayout >
-        <AbsoluteLayout >
-            <Button                
-                Image="imagen.png"
-                AbsoluteLayout.LayoutBounds="0, 0, 0.5, 0.5"
-                AbsoluteLayout.LayoutFlags="All"
-                
-                WidthRequest = "{Binding Width}"
-                HeightRequest= "{Binding Height}">
-                
+            </Grid.RowDefinitions>
 
-            </Button>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>              
+            </Grid.ColumnDefinitions>
             
-            <Button                
-                Image="imagen2.png"
-                
-                AbsoluteLayout.LayoutBounds="1, 0 , 0.5, 0.5"
-                AbsoluteLayout.LayoutFlags="All"
-                WidthRequest = "{Binding Width}"
-                HeightRequest= "{Binding Height}">
-            </Button>
+            <Label Text="ESTUDIO RJ COPELLO" TextColor="Black"  Grid.Row="0" Grid.ColumnSpan ="2" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            <Button Text="WhatsApp"   TextColor="Black" BackgroundColor="White" Grid.Row="1" Grid.Column="0" Clicked="ButtonWpp"></Button>
+            <Button Text="Pagina Web" TextColor="Black" BackgroundColor="White" Grid.Row="1" Grid.Column="1" Clicked="ButtonWeb"></Button>
+            <Button Text="Expensas"   TextColor="Black" BackgroundColor="White" Grid.Row="2" Grid.Column="0" Clicked="ButtonExp"></Button>
+            <Button Text="Consorcios" TextColor="Black" BackgroundColor="White" Grid.Row="2" Grid.Column="1" Clicked="ButtonCnRed"></Button>            
 
-            <Button
-                Image="imagen3.png"
-                AbsoluteLayout.LayoutBounds="0,1,0.5,0.5"
-                AbsoluteLayout.LayoutFlags="All"
-                WidthRequest = "{Binding Width}"
-                HeightRequest= "{Binding Height}">            
-            </Button>
+            <Grid Grid.Row="3" Grid.Column="0" RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition> 
+                </Grid.ColumnDefinitions>
+                <Button Text="FAQ"       TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="0" ></Button>
+                <Button Text="Acerca De" TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="1" ></Button>
+            </Grid>
 
-            <Button
-                Image="imagen4.png"
-                AbsoluteLayout.LayoutBounds="1,1,0.5,0.5"
-                AbsoluteLayout.LayoutFlags="All"
-                WidthRequest = "{Binding Width}"
-                HeightRequest= "{Binding Height}">
-                
-            </Button>
-        </AbsoluteLayout>
-    </AbsoluteLayout>
+            <Grid Grid.Row="3" Grid.Column="1" RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>                    
+                </Grid.ColumnDefinitions>
+                <Button Text="Facebook" TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Clicked="ButtonFb"></Button>         
+            </Grid>
+
+        </Grid>      
+        
+    </ContentPage.Content>    
 
 </ContentPage>
