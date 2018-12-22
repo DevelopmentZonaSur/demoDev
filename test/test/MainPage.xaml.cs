@@ -15,25 +15,33 @@ namespace test
             InitializeComponent(); 
            
         }
-        async void ButtonWpp(object sender, EventArgs args)
+        private async void ButtonWpp(object sender, EventArgs args)
         {
             await Task.Run(() => { Device.OpenUri(new Uri("https://wa.me/5491145281006")); });
         }
-        async void ButtonWeb(object sender, EventArgs args)
+        private async void ButtonWeb(object sender, EventArgs args)
         {
             await Task.Run(() => { Device.OpenUri(new Uri("http://www.copello.com.ar/")); });
         }
-        async void ButtonExp(object sender, EventArgs args)
+        private async void ButtonExp(object sender, EventArgs args)
         {
             await Task.Run(() => { Device.OpenUri(new Uri("https://www.pagomiexpensa.com.ar/")); });
         }
-        async void ButtonCnRed(object sender, EventArgs args)
+        private async void ButtonCnRed(object sender, EventArgs args)
         {
             await Task.Run(() => { Device.OpenUri(new Uri("http://www.consorciosenred.com/cerDevelopment/cer_nav.nsf/inicio.html")); });
         }
-        async void ButtonFb(object sender, EventArgs args)
+        private async void ButtonFb(object sender, EventArgs args)
         {
             await Task.Run(() => { Device.OpenUri(new Uri("https://m.facebook.com/EstudioRjcopello/")); });
+        }
+        private async void ButtonFaq(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new FaqPage());
+        }
+        private async void ButtonAcercaDe(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new AcercaDePage());
         }
     }
 

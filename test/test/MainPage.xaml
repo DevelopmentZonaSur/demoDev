@@ -29,8 +29,8 @@
                     <ColumnDefinition Width="5*"></ColumnDefinition>
                     <ColumnDefinition Width="5*"></ColumnDefinition> 
                 </Grid.ColumnDefinitions>
-                <Button Text="FAQ"       TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="0" ></Button>
-                <Button Text="Acerca De" TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="1" ></Button>
+                <Button Text="FAQ"       TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="0" Clicked="ButtonFaq"></Button>
+                <Button Text="Acerca De" TextColor="Black" BackgroundColor="White" Grid.Row="0" Grid.Column="1" Clicked="ButtonAcercaDe"></Button>
             </Grid>
 
             <Grid Grid.Row="3" Grid.Column="1" RowSpacing="0" ColumnSpacing="0">
