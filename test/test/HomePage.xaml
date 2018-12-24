@@ -3,16 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test.HomePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Image x:Name="HomeScreen" Source="whatsapplogo.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest ="200" HeightRequest =" 200" 
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Black" >
+            <Image x:Name="HomeScreen" Source="logo.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest ="300" HeightRequest ="300" 
                    Margin="10,150,10,10" >                
             </Image>
             <ProgressBar 
-                x:Name="ProgressBar"                
-                HeightRequest="150" 
+                x:Name="ProgressBar"
+                HeightRequest="150"
                 WidthRequest= "300" 
-                ProgressColor="Black"
-                Style=""
+                ProgressColor="#b50a37"                                         
                 Progress="0"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
