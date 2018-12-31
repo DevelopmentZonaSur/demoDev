@@ -22,6 +22,7 @@ namespace test.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
             App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#000000"));
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

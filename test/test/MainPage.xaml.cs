@@ -12,7 +12,9 @@ namespace test
           
         public MainPage()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+
            
         }
         private async void ButtonWpp(object sender, EventArgs args)

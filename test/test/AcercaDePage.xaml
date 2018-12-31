@@ -3,10 +3,100 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test.AcercaDePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="White">
+            <ContentView>
+                <Label Text="Acerca De"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="40"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"></Label>
+            </ContentView>
+            <Image Source="separador.png"
+                   VerticalOptions="Center">
+            </Image>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                
+                <Label Text="Tucumán 2181, 1º Piso, Oficina 3 ,  Capital Federal"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="1"></Label>
+            </Grid>
+            <Image Source="separador.png"
+                   VerticalOptions="Center">
+            </Image>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                
+                <Label Text="Tel/Fax: 4952-8955/4952-5613"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="1"></Label>
+            </Grid>
+            <Image Source="separador.png"
+                   VerticalOptions="Center">
+            </Image>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="8*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="estudio@rjcopello.com.ar"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="1"></Label>
+            </Grid>
+            <Image Source="separador.png"
+                   VerticalOptions="Center">
+            </Image>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                    
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Version 1.0.0"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"></Label>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

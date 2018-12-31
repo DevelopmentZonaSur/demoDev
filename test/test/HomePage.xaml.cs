@@ -16,7 +16,7 @@ namespace test
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
-
+           
 		}
         protected override async void OnAppearing()
         {

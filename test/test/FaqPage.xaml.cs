@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,14 @@ using Xamarin.Forms.Xaml;
 
 namespace test
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class FaqPage : ContentPage
-	{
-		public FaqPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class FaqPage : ContentPage
+    {
+        public FaqPage()
+        {
+            InitializeComponent();            
+        }
+        
+
+    }
 }
