@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <ContentView>
-                <Label Text="Acerca De"
+                <Label Text="Información"
                        TextColor="Black"
                        FontAttributes="Bold"
                        FontSize="Medium"
@@ -24,8 +24,11 @@
                     <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="8*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                
-                
+                <Image
+                    Source="mapa.png"
+                    Grid.Row="0"
+                    Grid.Column="0">                    
+                </Image>                
                 <Label Text="Tucumán 2181, 1º Piso, Oficina 3 ,  Capital Federal"
                        TextColor="Black"
                        FontAttributes="Bold"
@@ -45,8 +48,12 @@
                     <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="8*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                
-                
+                <Image
+                    Source="tel.png"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                </Image>
+
                 <Label Text="Tel/Fax: 4952-8955/4952-5613"
                        TextColor="Black"
                        FontAttributes="Bold"
@@ -66,6 +73,11 @@
                     <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="8*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
+                <Image
+                    Source="sobre.png"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                </Image>
                 <Label Text="estudio@rjcopello.com.ar"
                        TextColor="Black"
                        FontAttributes="Bold"
