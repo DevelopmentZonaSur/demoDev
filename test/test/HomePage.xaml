@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.HomePage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Black" >
+            <Image x:Name="HomeScreen" Source="logo.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest ="300" HeightRequest ="300" 
+                   Margin="10,150,10,10" >                
+            </Image>
+            <ProgressBar 
+                x:Name="ProgressBar"
+                HeightRequest="150"
+                WidthRequest= "300" 
+                ProgressColor="#b50a37"                                         
+                Progress="0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+            ></ProgressBar>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
