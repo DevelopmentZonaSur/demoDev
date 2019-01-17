@@ -17,20 +17,27 @@
                 <ColumnDefinition Width="5*"></ColumnDefinition>
                 <ColumnDefinition Width="5*"></ColumnDefinition>              
             </Grid.ColumnDefinitions>
-            
-            <Label Text="ESTUDIO RJ COPELLO" TextColor="Black"  Grid.Row="0" Grid.ColumnSpan ="2"></Label>
-            <Button Image="ws.png" Text="WhatsApp" TextColor="White" BackgroundColor="Gray" Grid.Row="1" Grid.Column="0" Clicked="ButtonWpp" ContentLayout="Top, 10"></Button>
-            <Button Text="Pagina Web" TextColor="White" BackgroundColor="#b50a37"   Grid.Row="1" Grid.Column="1" Clicked="ButtonWeb"></Button>
-            <Button Text="Expensas"   TextColor="White" BackgroundColor ="#b50a37"  Grid.Row="2" Grid.Column="0" Clicked="ButtonExp"></Button>
-            <Button Text="Consorcios" TextColor="White" BackgroundColor="Black"     Grid.Row="2" Grid.Column="1" Clicked="ButtonCnRed"></Button>            
+            <ContentView Grid.Row="0" Grid.ColumnSpan ="2" BackgroundColor="DarkRed" >
+                <Label
+                    Text="ESTUDIO RJ COPELLO" 
+                    TextColor="White" 
+                    FontAttributes="Bold"                     
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center">                    
+                </Label>
+            </ContentView>           
+            <Button Image="ws.png" Text ="WhatsApp" TextColor="White" BackgroundColor="Gray" Grid.Row="1" Grid.Column="0" Clicked="ButtonWpp" ContentLayout="Top, 3"></Button>
+            <Button Image="web.png" Text="Pagina Web" TextColor="White" BackgroundColor="#b50a37"   Grid.Row="1" Grid.Column="1" Clicked="ButtonWeb" ContentLayout="Top, 3" VerticalOptions="Fill"></Button>
+            <Button Image="pagoexp.png" Text="Expensas"   TextColor="White" BackgroundColor ="#b50a37"  Grid.Row="2" Grid.Column="0" Clicked="ButtonExp" ContentLayout="Top,3"></Button>
+            <Button Image="cons.png" Text="Consorcios" TextColor="White" BackgroundColor="Black" Grid.Row="2" Grid.Column="1" Clicked="ButtonCnRed" ContentLayout="Top, 3"></Button>            
 
             <Grid Grid.Row="3" Grid.Column="0" RowSpacing="0.5" ColumnSpacing="0.5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*"></ColumnDefinition>
                     <ColumnDefinition Width="5*"></ColumnDefinition> 
                 </Grid.ColumnDefinitions>
-                <Button Text="FAQ"       TextColor="White" FontAttributes="Bold"  BackgroundColor="Black" Grid.Row="0" Grid.Column="0" Clicked="ButtonFaq"></Button>
-                <Button Text="Acerca De" TextColor="White" FontAttributes="Bold"  BackgroundColor="Gray" Grid.Row="0" Grid.Column="1" Clicked="ButtonAcercaDe"></Button>
+                <Button Image="faq.png"  FontAttributes="Bold"  BackgroundColor="Gray" Grid.Row="0" Grid.Column="0" Clicked="ButtonFaq"></Button>
+                <Button Image="info.png"  FontAttributes="Bold"  BackgroundColor="Gray" Grid.Row="0" Grid.Column="1" Clicked="ButtonAcercaDe"></Button>
             </Grid>
 
             <Grid Grid.Row="3" Grid.Column="1" RowSpacing="0.5" ColumnSpacing="0.5">

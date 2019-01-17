@@ -10,7 +10,7 @@ using Android.OS;
 
 namespace test.Droid
 {
-    [Activity(Label = "RJCopello Estudio", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "RJCopello Estudio", Icon = "@mipmap/iconchch", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     
 
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -22,6 +22,7 @@ namespace test.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
             App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#000000"));
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

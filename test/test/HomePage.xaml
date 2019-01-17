@@ -3,19 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test.HomePage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Black" >
-            <Image x:Name="HomeScreen" Source="logo.png" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest ="300" HeightRequest ="300" 
-                   Margin="10,150,10,10" >                
-            </Image>
-            <ProgressBar 
-                x:Name="ProgressBar"
-                HeightRequest="150"
-                WidthRequest= "300" 
-                ProgressColor="#b50a37"                                         
-                Progress="0"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-            ></ProgressBar>
-        </StackLayout>
+        <AbsoluteLayout x:Name="HomeScreen" BackgroundColor="White">
+            <Image Source="logo.png" AbsoluteLayout.LayoutBounds="0.5,0.2, 0.8 , 0.8 " AbsoluteLayout.LayoutFlags="All"></Image>
+            <ProgressBar x:Name="ProgressBar" Progress="0" ProgressColor="Black" AbsoluteLayout.LayoutBounds="0.3 , 0.9 , 0.9 , 0.1" AbsoluteLayout.LayoutFlags="All"></ProgressBar>
+            <Label Text="Copyright 2018 - Estudio RJ Copello" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="0.5 , 1 , 1, 0.1 " AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Center" ></Label>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

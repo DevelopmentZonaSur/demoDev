@@ -2,11 +2,105 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="test.FaqPage">
+             
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <StackLayout Orientation="Vertical" Padding="5" BackgroundColor="White">
+            <ContentView>
+                <Label Text="Preguntas Frecuentes"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"></Label>
+            </ContentView>
+            <Image Source="separador.png"
+                   VerticalOptions="Center">                
+            </Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text=" > ¿Qué puedo encontrar en esta aplicación?"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="0">                    
+                </Label>
+                <Label
+                    Text="Esta aplicación tiene por objetivo centralizar todas las herramientas para interactuar con la administración"
+                    TextColor="Black"
+                    FontSize="Micro"
+                    Font="12"
+                    Grid.Row="1"
+                    Grid.Column="0">                    
+                </Label>
+            </Grid>
+            <Image
+                Source="separador.png"
+                VerticalOptions="Center">                
+            </Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text=" > ¿Cómo funciona?"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                </Label>
+                <Label
+                    Text="La pantalla principal cuenta con accesos directos a los diferentes servicios"
+                    TextColor="Black"
+                    FontSize="Micro"
+                    Font="12"
+                    Grid.Row="1"
+                    Grid.Column="0">
+                </Label>
+            </Grid>
+            <Image
+                Source="separador.png"
+                VerticalOptions="Center">
+            </Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text=" > ¿La aplicación guarda información personal?"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Font="15"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                </Label>
+                <Label
+                    Text="No, la aplicación no almacena ningún tipo de información personal ni cuentas de usuario"
+                    TextColor="Black"
+                    FontSize="Micro"
+                    Font="12"
+                    Grid.Row="1"
+                    Grid.Column="0">
+                </Label>
+            </Grid>
+        </StackLayout> 
+        
     </ContentPage.Content>
 </ContentPage>
